@@ -10,12 +10,15 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthPage } from '../pages/auth/auth';
+import { Facebook } from '@ionic-native/facebook';
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
+    AuthPage,
     HomePage,
     TabsPage
   ],
@@ -28,12 +31,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     ContactPage,
+    AuthPage,
     HomePage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Facebook,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
